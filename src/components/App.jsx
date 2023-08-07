@@ -50,7 +50,6 @@ export class App extends Component {
  handleLoadMore = () => {
   const { page, searchText } = this.state;
   this.setState({ isLoading: true })
-  //console.log(gallery);
 
   return getImg(searchText, page + 1).then((newGallery) => {
     this.setState((prevState) => ({
