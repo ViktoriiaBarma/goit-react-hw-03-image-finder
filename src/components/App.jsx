@@ -66,7 +66,9 @@ export class App extends Component {
   render() {
     const {isLoading, loadMore, isShowModal, modalShow , gallery } = this.state;
     return (
-      <Wrap>
+      <Wrap style={{
+          height: '100vh',
+        }} >
         <Searchbar hendleInput={this.hendleInput} />
         {isLoading ? <Loader /> :
           <ImageGallery

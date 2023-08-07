@@ -6,4 +6,6 @@ export const Wrap = styled.div`
   grid-gap: 16px;
   padding-bottom: 24px;
   background-color: #e5eeff;
+  height:100hv;
+
 `;
